@@ -1,4 +1,4 @@
-# DeepFooding-CDL
+# DeepFooding
 
 ## A software for automatic labeling of human eating behaviors
 
