@@ -11,7 +11,7 @@
 ### Step 1: Discover the DeepLabCut package in depth
 
 To get familiar with DeepLabCut, I recommend
-(1) reading the [Nature Protocol paper](https://www.nature.com/articles/s41596-019-0176-0) describing the toolbox
+(1) reading the scientific papers describing the protocol and the incentives of the toolbox especially the [Nature Protocol paper](https://www.nature.com/articles/s41596-019-0176-0). You can find all relevant papers (starting with "0_") in the papers directory
 (2) checking out the documentation page of the package [here](https://deeplabcut.github.io/DeepLabCut/docs/intro.html) and the quick [video](https://www.youtube.com/watch?v=A9qZidI7tL8) detailing how to navigate the docs
 (3) following the [Course](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md) about the science of DeepLabCut and how to use it. Consider having a look at the DEMO JupyterNotebooks.
 
@@ -32,6 +32,8 @@ At this stage, you need to document tracking performance across pretrained netwo
 The last but not least step is to **make sense of the tracking data** you have estimated so far. For example, you can start by trying to identify when a person takes a bite or a sip during their meal based on the positions of their mouth, glass and cutlery and calculating their distances over time. You can then establish distance thresholds (e.g., a distance < 1cm) that will allow you to automatically code the beginning and end of each bite or sip taken during a meal.
 
 A [rich set of tools](https://github.com/DeepLabCut/DLCutils) already exists and can help you create your own custom analysis. Check out more [here](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md#module-5-got-poses-now-what-)
+
+A compilation of relevant scientific papers can also be found in the "scientific_papers" directory (all papers starting with "1_")
 
 ### Github and Git ressources
 
