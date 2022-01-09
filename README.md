@@ -4,9 +4,9 @@
 
 ### The two main goals of the project
 
-(1) Precisely and robustly track movements and actions using video-recordings of dining experiences using deep-learning algorithms (see: [DeepLabCut software package](https://github.com/annelisesaive/DeepLabCut)
+(1) Precisely and robustly track movements and actions using video-recordings of dining experiences using pre-trained deep-learning algorithms. The whole pipeline will be developed using the [DeepLabCut software package](https://github.com/annelisesaive/DeepLabCut). More info, demos and ressources detailed below.
 
-(2) Create robust labeling of key eating behaviors based on resulting tracking spatial coordinates (e.g., mouthful, swallow etc.)
+(2) Create robust labeling of key eating behaviors based on resulting tracking spatial coordinates (e.g., bite, sip etc.). The labelling results will then be compared with the labels of two datasets manually coded by experts.
 
 ### Step 1: Discover the DeepLabCut package in depth
 
@@ -21,7 +21,7 @@ To get familiar with DeepLabCut, I recommend
 
 **Train and evaluate your model** Once you label on your laptop, if you want to train on your CPU, you can run the JupyterNotebook in this repo on your own computer. If you want to use GPUs on the cloud, please upload your project folder to google drive. You can then use this [COLAB NOTEBOOK](https://github.com/DeepLabCut/DeepLabCut/blob/master/examples/COLAB_YOURDATA_TrainNetwork_VideoAnalysis.ipynb) to create a training set, train, and start evaluating. More information for this step can be found [here](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md#module-2-neural-networks)
 
-At this stage, you need to document tracking performance across pretrained networks and data augmentation techniques in a controlled way (watch this [video]((https://www.youtube.com/watch?v=WXCVr6xAcCA) for help). You can find more information about what network you should use and why [here](https://github.com/AlexEMG/DeepLabCut/wiki/What-neural-network-should-I-use%3F). Complementary ressources are available [here](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md#module-3-evalution-of-network-performance).
+At this stage, you need to document tracking performance across pretrained networks and data augmentation techniques in a controlled way (watch this [video](https://www.youtube.com/watch?v=WXCVr6xAcCA) for help). You can find more information about what network you should use and why [here](https://github.com/AlexEMG/DeepLabCut/wiki/What-neural-network-should-I-use%3F). Complementary ressources are available [here](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md#module-3-evalution-of-network-performance).
 
 ### Step 3: Scaling your analysis to many new videos
 
@@ -29,9 +29,9 @@ At this stage, you need to document tracking performance across pretrained netwo
 
 ### Step 4: Making sense of poses estimation
 
-The last but not least step is to make sense of the tracking data you have estimated so far. For example, you can start by trying to identify when a person takes a bite or a sip during their meal based on the positions of their mouth, glass and cutlery and calculating their distances over time. You can then establish distance thresholds (e.g., a distance < 1cm) that will allow you to automatically code the beginning and end of each bite or sip taken during a meal. 
+The last but not least step is to **make sense of the tracking data** you have estimated so far. For example, you can start by trying to identify when a person takes a bite or a sip during their meal based on the positions of their mouth, glass and cutlery and calculating their distances over time. You can then establish distance thresholds (e.g., a distance < 1cm) that will allow you to automatically code the beginning and end of each bite or sip taken during a meal. 
 
-There is a rich set of tools out there to help you create your own custom analysis, or use [others](https://github.com/DeepLabCut/DLCutils) (and edit them to your needs). Check out more [here](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md#module-5-got-poses-now-what-)
+A [rich set of tools](https://github.com/DeepLabCut/DLCutils) already exists and can help you create your own custom analysis. Check out more [here](https://github.com/DeepLabCut/DeepLabCut-Workshop-Materials/blob/master/DLCcourse.md#module-5-got-poses-now-what-)
 
 ### Github and Git ressources
 
